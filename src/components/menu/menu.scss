@@ -1,0 +1,40 @@
+@import "../../global.scss";
+.menu{
+    width: 350px;
+    height: 100vh;
+    background-color:white ;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+
+
+    &.active{
+        right: 0;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 60%;
+
+        li{
+            margin-bottom: 20px;
+            a{
+                font-size: 30px;
+                text-decoration: none;
+                color: $mainColor;
+            }
+
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+}

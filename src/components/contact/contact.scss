@@ -1,0 +1,91 @@
+@import '../../global.scss';
+.contact {
+    background-color: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+    .left {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $mainColor;
+        height: 80%;
+        width: 80%;
+        
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        img {
+            border-radius: 25px;
+            height: 100%;
+            width: 100;
+            object-fit: cover;
+        }
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: 100%;
+
+
+        .contactText {
+            font-size: 35px;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .contactForm {
+            width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+            input {
+                width: 300px;
+                height: 30px;
+                font-size: 14px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid white;
+
+            }
+
+            textarea {
+                width: 300px;
+                height: 200px;
+                font-size: 14px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid white;
+            }
+
+            button {
+                width: 150px;
+                height: 30px;
+                color: white;
+                background-color: crimson;
+                border: none;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+            span {
+                color: green;
+              }
+        }
+    }
+}

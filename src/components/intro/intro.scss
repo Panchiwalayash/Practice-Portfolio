@@ -1,0 +1,80 @@
+@import '../../global.scss';
+
+.intro{
+    background-color: $mainColor;
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+    .left{
+        flex: 0.5;
+        overflow: hidden;
+        .imageContainer{
+            margin-left: 75px;
+            width: 600px;
+            height: 600px;
+            background-color: rgb(234, 126, 126);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            object-fit: cover;
+        
+            .myImg{
+                width: 400px;
+                height: 600px;
+            }
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+    }
+
+    .right{
+        flex: 0.5;
+        position: relative;
+
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            padding-left: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: 50px;
+                margin: 10px 0;
+            }
+            h2{
+                font-size: 35px;
+            }
+            .oneLine{
+                display: flex;
+
+                h3{
+                    font-size: 30px;
+                    margin-left: 10px;
+                    span{
+                        color: rgb(214, 69, 69);;
+                    }
+                    
+                }
+            }
+            
+        }
+        a{
+               position: absolute; 
+               bottom: 0;
+                .downArrow{
+                    font-size: 50px;
+                    animation: arrow 3s infinite;
+                }
+                @keyframes arrow {
+                    100%{
+                        opacity: 0;
+                    }
+                }
+            }
+    }
+}

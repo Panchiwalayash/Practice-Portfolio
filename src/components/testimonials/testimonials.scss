@@ -1,0 +1,94 @@
+@import '../../global.scss';
+
+
+.testimonials{
+    background-color: $mainColor;
+    
+    .main{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+
+    h1{
+        font-size: 45px;
+    }
+
+        .container{
+            display: flex;
+            width: 70%;
+            height: 80%;
+            justify-content: space-around;
+            align-items: center;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+
+        .card{
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            width: 280px;
+            height: 350px;
+            background-color: white;
+            border-radius: 20px;
+            justify-content: space-around;
+            margin: 0px 10px 0px 10px;
+            transition: all 1s ease;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            .top{
+                width: 60%;
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+
+                .left{
+                    width: 25px;
+                    height: 25px;
+                }
+                .middle{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .right{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            .center{
+                margin-bottom: 20px;
+                width: 80%;
+                font-size: 17px;
+                background-color: rgb(213, 213, 224);
+                padding: 15px;
+                border-radius: 10px;
+            }
+            .bottom{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .bottomName{
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+                .bottomPosition{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+}
