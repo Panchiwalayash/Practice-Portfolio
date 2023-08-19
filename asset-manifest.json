@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Practice-Portfolio/static/css/main.4c4f426f.css",
+    "main.js": "/Practice-Portfolio/static/js/main.7151b542.js",
+    "index.html": "/Practice-Portfolio/index.html",
+    "main.4c4f426f.css.map": "/Practice-Portfolio/static/css/main.4c4f426f.css.map",
+    "main.7151b542.js.map": "/Practice-Portfolio/static/js/main.7151b542.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c4f426f.css",
+    "static/js/main.7151b542.js"
+  ]
+}
