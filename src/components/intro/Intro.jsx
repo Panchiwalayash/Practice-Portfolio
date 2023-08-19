@@ -1,13 +1,11 @@
-import './intro.scss'
-import React from 'react'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import Typewriter from 'typewriter-effect'
+import "./intro.scss";
+import React from "react";
+import { BiDownArrowAlt } from "react-icons/bi";
+import Typewriter from "typewriter-effect";
 
 export default function Intro() {
-
-
   return (
-    <div className='intro' id='intro'>
+    <div className="intro" id="intro">
       <div className="left">
         <div className="imageContainer">
           <img src="assets/man.png" alt="" className="myImg" />
@@ -20,23 +18,21 @@ export default function Intro() {
           <div className="oneLine">
             <h3>Web Developer </h3>
             <h3 className="typeWriter">
-
               <Typewriter
-
                 options={{
-                  strings: ["React js", "Node js", "C++","Java","Pyhton"],
+                  strings: ["React js", "Node js", "C++", "Java", "Pyhton"],
                   autoStart: true,
                   delay: 75,
-                  loop: true
+                  loop: true,
                 }}
               />
             </h3>
           </div>
         </div>
         <a href="#portfolio">
-          <KeyboardArrowDownIcon className="downArrow" style={{ color: "white" }} />
+          <BiDownArrowAlt className="downArrow" style={{ color: "white" }} />
         </a>
       </div>
     </div>
-  )
+  );
 }
